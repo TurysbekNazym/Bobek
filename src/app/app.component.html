@@ -1,0 +1,57 @@
+<header>
+  <nav>
+    <ul class="horizontal-m">
+      <li [routerLink]="['/home']" routerLinkActive="active" >
+        <a>Басты бет</a>
+      </li>
+      <li [routerLink]="['/information']" routerLinkActive="active" >
+        <a>Балабақша туралы </a>
+      </li>
+      <li [routerLink]="['/contact']" routerLinkActive="active">
+        <a>Байланыс</a>
+      </li>
+    </ul>
+    </nav>
+   <div class="header-img">
+
+   </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <section class="col-md-3">
+      <nav>
+        <ul class="vertical-m">
+          <li [routerLink]="['/groups']" routerLinkActive="active">
+            <a>Біздің топтар</a>
+          </li>
+          <li [routerLink]="['/schedule']" routerLinkActive="active">
+            <a>Kүн тәртібі</a>
+          </li>
+          <li [routerLink]="['/robotics']" routerLinkActive="active">
+            <a>Робототехника үйірмесі </a>
+          </li>
+          <li [routerLink]="['/ awards']" routerLinkActive="active">
+            <a>Жетістіктер</a>
+          </li>
+          <li [routerLink]="['/physicalexercise']" routerLinkActive="active">
+            <a>Дене шынықтыру бағдарламалары</a>
+          </li>
+          <li [routerLink]="['/psychology']" routerLinkActive="active">
+            <a>Психолог маманың жұмыстары </a>
+          </li>
+          <li [routerLink]="['/logoped']" routerLinkActive="active">
+            <a>Логопед маманның жұмыстары </a>
+          </li>
+        </ul>
+      </nav>
+  </section>
+  <section class="col-md-9">
+    <router-outlet></router-outlet>
+  </section>
+  </div>
+</div>
+
+
+<footer>
+</footer>
